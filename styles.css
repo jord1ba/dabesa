@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+}
+body > * {
+    padding: 20px 20%;
+}
+
+nav {
+    background-color: #33333374;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0;
+    z-index: 11111;
+}
+
+nav.sticky {
+    background-color: black;
+}
+
+nav .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    padding: 10px;
+}
+
+nav.sticky .logo {
+    padding: 0 10px;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav li a {
+    position: relative;
+    text-decoration: none;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.6s;
+    padding: 23px 16px;
+    font-size: 1em;
+}
+
+nav.sticky li a {
+    padding: 13px 16px;
+}
+
+nav li a:hover, .dropdown button:hover, .dropdown-content li:hover {
+    background-color: #33333383;
+    cursor: pointer;
+}
+
+nav li a.active {
+    background-color: #333333aa;
+}
+
+header {
+    background-image: url("src/main.jpg");
+    background-repeat: no-repeat;
+    padding: 0 0 20% 0;
+    /*padding-bottom: 25.22%;*/
+    height: 0;
+    background-size: 100%;
+}
+
+footer {
+    background-color: rgb(82, 82, 82);
+    color: rgb(198, 198, 198);
+}
+
+.que-hacemos-titulo {
+    background-color: green;
+}
+.que-hacemos-titulo > h1 {
+    color: white;
+    margin: 0px;
+}
+
+.que-hacemos {
+    background-color: rgb(241, 241, 241);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 35% auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 20px;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.especialidades {
+    grid-column: 1 / 3;
+}
+
+.que-hacemos img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.que-hacemos ul {
+    display: block;
+    margin-top: 1em;
+
+}
+.que-hacemos ul li {
+    display: block;
+    position: relative;
+}
+.que-hacemos ul li {
+    margin-bottom: 1em;
+    margin-left: 2em;;
+}
+.que-hacemos ul li::before {
+    content: "";
+    position: absolute;
+    top: 1.2em;
+    left: -30px;
+    margin: -.9em 0 0 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: linear-gradient(#1ad40a,green);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="languages.css">
+    <title>Dabesa.es</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#" class="logo">Dabesa</a>
+        <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Conócenos</a></li>
+            <li><a href="#">Localización</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li>
+                <div class="dropdown" tab-index="0">
+                    <button id="dropdown-btn"></button>
+                    <ul class="dropdown-content" id="dropdown-content"></ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header>
+    </header>
+    
+    <section class="que-hacemos-titulo">
+        <h1>Que ofrecemos en Dabesa</h1>
+    </section>
+    <section class="que-hacemos">
+        <aside>
+            <img src="src/mix-muelles.png" alt="">
+        </aside>
+        <div>
+            <p>Somos especialistas en la producción de muelles de precisión, con presencia en sectores tan variados como:</p>
+            <ul>
+                <li>Transporte (aeronáutica, automoción y ferroviario)</li>
+                <li>Agrícola</li>
+                <li>Bricolaje</li>
+            </ul>
+        </div>
+        <div class="especialidades">
+            <p>Tenemos 40 años de experiencia en la fabricación de todo tipo de muelles para usos industriales y agrícolas.
+            Nos guiamos con un riguroso proceso de calidad, fabricando sobre medidas, muestras y planos.</p>
+        </div>
+    </section>
+    <section>
+        <h1>Nuestros productos mas populares</h1>
+    </section>
+    <section>
+        <h1>Categorias</h1>
+        <p>Somos especialistas en muelles de precisión. Nuestro mercado abarca sectores tan exigentes como la industria del transporte: aeronáuticas, automoción y ferroviario; y tan variados como el agrícola, bricolaje, etc.</p>
+    </section>
+
+    <footer>
+        Copyright © 2024 Dabesa.es, Todos los derechos reservados.
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <script type="text/javascript" src="languages.js"></script>
+</body>
+
+</html>
