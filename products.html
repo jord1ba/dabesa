@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="languages.css">
+    <link rel="stylesheet" href="products.css">
+    <title>Productos</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Dabesa</a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Conócenos</a></li>
+            <li><a href="#">Localización</a></li>
+            <li><a href="#" class="active">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li>
+                <div class="dropdown" tab-index="0">
+                    <button id="dropdown-btn"></button>
+                    <ul class="dropdown-content" id="dropdown-content"></ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header>
+    </header>
+    
+    <section class="que-hacemos-titulo">
+        <h1>Productos</h1>
+    </section>
+
+    <section>
+        <div class="popular-products">
+            <a href="#">
+                <h2>Gancho Chapa</h2>
+                <img src="src/products/gancho_chapa.jpg" alt="">
+                <p>Leer más...</p>
+            </a>
+            <a href="#">
+                <h2>Gancho Chapa</h2>
+                <img src="src/products/gancho_chapa.jpg" alt="">
+                <p>Leer más...</p>
+            </a>  
+            <a href="#">
+                <h2>Gancho Chapa</h2>
+                <img src="src/products/gancho_chapa.jpg" alt="">
+                <p>Leer más...</p>
+            </a>  
+            <a href="#">
+                <h2>Gancho Chapa</h2>
+                <img src="src/products/gancho_chapa.jpg" alt="">
+                <p>Leer más...</p>
+            </a>  
+            <a href="#">
+                <h2>Gancho Chapa</h2>
+                <img src="src/products/gancho_chapa.jpg" alt="">
+                <p>Leer más...</p>
+            </a>  
+            <a href="#">
+                <h2>Gancho Chapa</h2>
+                <img src="src/products/gancho_chapa.jpg" alt="">
+                <p>Leer más...</p>
+            </a>  
+        </div>
+        <aside class="categories">
+            <h2>Categorías</h2>
+            <ul>
+                <li>Muelles de compresión</li>
+                <li>Muelles de tracción</li>
+                <li>Muelles de torsión</li>
+                <li>Muelles agrícolas</li>
+                <li>Piezas en forma de 2 y 3 D- CNC</li>
+                <li>Estampaciones Metálicas</li>
+                <li>Expositores Metálicos</li>
+            </ul>
+        </aside>
+        <span class="clear"></span>
+    </section>
+
+    <footer>
+        Copyright © 2024 Dabesa.es, Todos los derechos reservados.
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <script type="text/javascript" src="languages.js"></script>
+</body>
+
+</html>
